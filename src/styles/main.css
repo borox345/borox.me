@@ -1,0 +1,15 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+/* Your own custom component styles */
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&display=swap');
+
+@import 'tailwindcss/utilities';
+
+
+
+body {
+    background-image: url('../../components/images/bg.png');
+    font-family: 'DM Mono', monospace;
+    cursor: default;
+}
