@@ -29,20 +29,20 @@ export default function Home() {
             <span className='font-bold'>front-end</span> begginer and <span className='font-bold'>python</span> enjoyer
           </p>
 
-          <div className='flex items-center justify-center relative top-[20px]'>
+          <div className='flex items-center content-center justify-center relative top-[20px]'>
             <a href='https://discord.com/users/314424536256872449' target='_blank' className='bg-[#3d48c0] opacity-80 hover:opacity-100 duration-500 w-[3rem] h-[3rem] rounded-lg flex items-center justify-center hover:scale-110 transition-transform'>
               <FaDiscord className='fill-[#b9bfff] w-[1.875rem] h-[1.875rem] cursor-pointer' />
             </a>
 
-            <a href='https://github.com/borox345' target='_blank' className='bg-[#1a1a1a] opacity-90 hover:opacity-100 duration-500 w-[3rem] h-[3rem] rounded-lg flex items-center justify-center relative left-5 hover:scale-110 transition-transform'>
+            <a href='https://github.com/borox345' target='_blank' className='bg-[#1a1a1a] opacity-90 hover:opacity-100 duration-500 w-[3rem] h-[3rem] rounded-lg flex items-center justify-center ml-5 hover:scale-110 transition-transform'>
               <FaGithub className='fill-[#979595] w-[1.875rem] h-[1.875rem] cursor-pointer' />
             </a>
 
-            <a href='mailto:borox.tv@gmail.com' target='_blank' className='bg-[#c62220] opacity-90 hover:opacity-100 duration-500 w-[3rem] h-[3rem] rounded-lg flex items-center justify-center relative left-10 hover:scale-110 transition-transform'>
+            <a href='mailto:borox.tv@gmail.com' target='_blank' className='bg-[#c62220] opacity-90 hover:opacity-100 duration-500 w-[3rem] h-[3rem] rounded-lg flex items-center justify-center ml-5 hover:scale-110 transition-transform'>
               <SiGmail className='fill-[#f56a60] w-[1.5625rem] h-[1.5625rem] cursor-pointer' />
             </a>
 
-            <a href='https://twitter.com/borox345' target='_blank' className='bg-[#1c93e4] opacity-90 hover:opacity-100 duration-500 w-[3rem] h-[3rem] rounded-lg flex items-center justify-center relative left-[4rem] hover:scale-110 transition-transform'>
+            <a href='https://twitter.com/borox345' target='_blank' className='bg-[#1c93e4] opacity-90 hover:opacity-100 duration-500 w-[3rem] h-[3rem] rounded-lg flex items-center justify-center ml-5 hover:scale-110 transition-transform'>
               <SiTwitter className='fill-[#97d5ff] w-[1.5625rem] h-[1.5625rem] cursor-pointer' />
             </a>
           </div>
