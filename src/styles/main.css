@@ -2,7 +2,14 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+/* @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap'); */
+
+@font-face { font-family: monospace; src: url("../../assets/fonts/SpaceMono-BoldItalic.ttf") format("woff"); font-weight: 700; }
+
+
 body {
-    background-image: url('../../components/images/bg.png');
+    font-family: monospace;
+    /* background-image: url('../../assets/images/bg.png'); */
     cursor: default;
+    background-color: #000000;
 }
