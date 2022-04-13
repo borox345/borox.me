@@ -20,8 +20,8 @@ export default function Home() {
 
       <main>
 
-        <h1 className="lg:text-4xl text-4xl font-black text-white text-center hover:scale-110 transition-transform duration-300">
-          hi, im <span className="cursor-pointer">borox.</span>
+        <h1 className="lg:text-4xl text-4xl font-black text-white text-center hover:scale-105 transition-transform duration-300">
+          hi, im <span className="cursor-pointer text-[#5248dd]">borox.</span>
         </h1>
         <p className='text-white text-center text-xl'>
           i like <span className='font-bold'>coding.</span>
