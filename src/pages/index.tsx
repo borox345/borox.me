@@ -21,27 +21,34 @@ export default function Home() {
       <main>
 
         <h1 className="lg:text-4xl text-4xl font-black text-white text-center hover:scale-105 transition-transform duration-300">
-          hi, im <span className="cursor-pointer text-[#5248dd]">borox.</span>
+          <span className="cursor-pointer text-[#7b97f3]">borox.me</span>
         </h1>
-        <p className='text-white text-center text-xl'>
-          i like <span className='font-bold'>coding.</span>
-        </p>
+
+        <h2 className="lg:text-1xl text-1xl font-black text-white text-center hover:scale-105 transition-transform duration-300">
+          <a href='https://ayo.so/borox'>
+            <span className="cursor-pointer text-[#7b97f3]">ayo.so/borox</span>
+          </a>
+        </h2>
 
         <div className='flex items-center content-center justify-center mt-[1.25rem]'>
-          <a className='text-white text-base hover:text-[#5248dd]' href='https://discord.com/users/314424536256872449'>
+          <a className='text-white text-base hover:text-[#7b97f3]' href='https://discord.com/users/314424536256872449'>
             discord/
           </a>
 
-          <a className='text-white text-base hover:text-[#5248dd] ml-3' href='https://github.com/borox345'>
+          <a className='text-white text-base hover:text-[#7b97f3] ml-3' href='https://github.com/borox345'>
             github/
           </a>
 
-          <a className='text-white text-base hover:text-[#5248dd] ml-3' href='https://github.com/borox345'>
+          <a className='text-white text-base hover:text-[#7b97f3] ml-3' href='https://github.com/borox345'>
             mail/
           </a>
 
-          <a className='text-white text-base hover:text-[#5248dd] ml-3' href='https://twitter.com/borox345'>
+          <a className='text-white text-base hover:text-[#7b97f3] ml-3' href='https://twitter.com/borox345'>
             twitter/
+          </a>
+
+          <a className='text-white text-base hover:text-[#7b97f3] ml-3' href='https://discord.com/api/oauth2/authorize?client_id=956996246516670494&permissions=8&scope=bot'>
+            rocki/
           </a>
         </div>
 
