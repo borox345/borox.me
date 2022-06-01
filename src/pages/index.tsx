@@ -1,10 +1,24 @@
 import Head from 'next/head';
-import { FaDiscord } from 'react-icons/fa';
-import { FaGithub } from 'react-icons/fa';
-import { SiTwitter } from 'react-icons/si';
-import { SiGmail } from 'react-icons/si';
+import React, { useState, useEffect } from 'react'
+import { BsSpotify } from 'react-icons/bs';
+import axios from "axios";
+
+const options = {method: 'GET', url: 'http://127.0.0.1:3000/spotify'};
 
 export default function Home() {
+  axios.request(options).then(function (response) {
+    console.log(response.data.playing);
+    if(response.data.code === 200){
+      let playing = response.data.playing;
+    }
+    else {
+      let playing = 'Not playing anything';
+    }
+    
+  }).catch(function (error) {
+    console.error(error);
+  });
+  
 
   return (
     <div className="container flex items-center justify-center p-4 mx-auto min-h-screen">
@@ -24,11 +38,6 @@ export default function Home() {
           <span className="cursor-pointer text-[#7b97f3]">borox.me</span>
         </h1>
 
-        <h2 className="lg:text-1xl text-1xl font-black text-white text-center hover:scale-105 transition-transform duration-300">
-          <a href='https://ayo.so/borox'>
-            <span className="cursor-pointer text-[#7b97f3]">ayo.so/borox</span>
-          </a>
-        </h2>
 
         <div className='flex items-center content-center justify-center mt-[1.25rem]'>
           <a className='text-white text-base hover:text-[#7b97f3]' href='https://discord.com/users/314424536256872449'>
@@ -46,30 +55,23 @@ export default function Home() {
           <a className='text-white text-base hover:text-[#7b97f3] ml-3' href='https://twitter.com/borox345'>
             twitter/
           </a>
-
-          <a className='text-white text-base hover:text-[#7b97f3] ml-3' href='https://discord.com/api/oauth2/authorize?client_id=956996246516670494&permissions=8&scope=bot'>
-            rocki/
-          </a>
         </div>
 
-        {/* <div className='flex items-center content-center justify-center mt-[1.25rem]'>
-          <a href='https://discord.com/users/314424536256872449' target='_blank' className='bg-[#3d48c0] opacity-80 hover:opacity-100 duration-500 w-[3rem] h-[3rem] rounded-lg flex items-center justify-center hover:scale-110 transition-transform'>
-            <FaDiscord className='fill-[#b9bfff] w-[1.875rem] h-[1.875rem] cursor-pointer' />
+        <h2 className="lg:text-1xl text-1xl font-black text-white text-center hover:scale-105 transition-transform duration-300 pt-3">
+          <a href='https://ayo.so/borox'>
+            <span className="cursor-pointer text-[#7b97f3]">ayo.so/borox</span>
           </a>
+        </h2>
 
-          <a href='https://github.com/borox345' target='_blank' className='bg-[#1a1a1a] opacity-90 hover:opacity-100 duration-500 w-[3rem] h-[3rem] rounded-lg flex items-center justify-center ml-5 hover:scale-110 transition-transform'>
-            <FaGithub className='fill-[#979595] w-[1.875rem] h-[1.875rem] cursor-pointer' />
-          </a>
+        <footer>
+          <div className='flex items-center content-center justify-center mt-[1.25rem]'>
+            <a href='https://open.spotify.com/track/4uOHYc6dCVLcNdQBRUlA0G'>
+              <p className='text-[#1DB954] text-center'><BsSpotify className='inline-block'/> PLAYING</p>
+            </a>
+          </div>
+        </footer>
+        
 
-          <a href='mailto:borox.tv@gmail.com' target='_blank' className='bg-[#c62220] opacity-90 hover:opacity-100 duration-500 w-[3rem] h-[3rem] rounded-lg flex items-center justify-center ml-5 hover:scale-110 transition-transform'>
-            <SiGmail className='fill-[#f56a60] w-[1.5625rem] h-[1.5625rem] cursor-pointer' />
-          </a>
-
-          <a href='https://twitter.com/borox345' target='_blank' className='bg-[#1c93e4] opacity-90 hover:opacity-100 duration-500 w-[3rem] h-[3rem] rounded-lg flex items-center justify-center ml-5 hover:scale-110 transition-transform'>
-            <SiTwitter className='fill-[#97d5ff] w-[1.5625rem] h-[1.5625rem] cursor-pointer' />
-          </a>
-
-        </div> */}
 
       </main >
     </div >
