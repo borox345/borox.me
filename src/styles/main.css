@@ -2,13 +2,15 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap'); */
-
-@font-face { font-family: monospace; src: url("../../assets/fonts/SpaceMono-BoldItalic.ttf") format("woff"); font-weight: 700; }
-
+@font-face { font-family: sans-serif; src: url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap") format("woff"); font-weight: 800;}
 
 body {
-    font-family: monospace;
+    font-family: sans-serif;
     cursor: default;
-    background-color: #020305;
+    background-color: #1b1a1a;
+    color: #e6e4e4;
+}
+
+.contact-grid {
+    grid-template-columns: 1.5em 1fr;
 }
