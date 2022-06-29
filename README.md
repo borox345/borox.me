@@ -1,6 +1,6 @@
 # <a href='https://borox.me/'>borox.me</a>
 
-## 🔧 Created using...
+## Created using
 - Typescript
 - React
 - Next.js
