@@ -41,7 +41,7 @@ export default function Home() {
       </section>
 
       <section id='contact' className='py-16 px-8 flex flex-col justify-center items-center min-h-screen'>
-        <h1 className='text-6xl font-black text-center'>Socials!</h1>
+        <h1 className='text-6xl font-black text-center'>Contact me!</h1>
 
         <div className='text-xl grid gap-3 mt-5 text-center font-semibold contact-grid'>
           <a href='https://twitter.com/borox345' className='h-[1.5em] w-[1.5em] text-[#1DA1F2] justify-self-end cursor-pointer'>
