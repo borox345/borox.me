@@ -8,7 +8,8 @@ import { BsDiscord } from 'react-icons/bs'
 import { BiMailSend } from 'react-icons/bi'
 import { BsGithub } from 'react-icons/bs'
 import { FaPython } from 'react-icons/fa'
-import { IoIosArrowDown } from 'react-icons/io'
+import { FaReact } from 'react-icons/fa'
+import { FaAngleDoubleDown } from 'react-icons/fa'
 
 import memoji  from '../../assets/images/meMoji.png'
 
@@ -29,19 +30,19 @@ export default function Home() {
           Hey, I'm borox!
         </h2>
 
-        <p className='text-lg leading-6 tracking-wide mb-12 pt-4 text-center font-black'>
+        <p className='text-lg leading-6 tracking-wide pt-4 text-center font-black'>
           <FaPython className='inline-flex w-6 h-6'/> <span className='hover:font-black text-[#3c86be]'><a target='_blank' href='https://python.org'>python</a> </span> enjoyer <br/>
         </p>
 
         <div className='flex items-center justify-center flex-grow mt-20 animate-bounce'>
           <a href='#contact'>
-            <IoIosArrowDown className='w-16 h-16 ' />
+            <FaAngleDoubleDown className='w-12 h-12 ' />
           </a>
         </div>
       </section>
 
       <section id='contact' className='py-16 px-8 flex flex-col justify-center items-center min-h-screen'>
-        <h1 className='text-6xl font-black text-center'>Contact me!</h1>
+        <h1 className='lg:text-6xl md:text-6xl text-5xl font-black text-center'>Contact me!</h1>
 
         <div className='text-xl grid gap-3 mt-5 text-center font-semibold contact-grid'>
           <a href='https://twitter.com/borox345' className='h-[1.5em] w-[1.5em] text-[#1DA1F2] justify-self-end cursor-pointer'>
