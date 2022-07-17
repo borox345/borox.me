@@ -21,7 +21,7 @@ export default function Home() {
         <title>borox</title>
       </Head>
 
-      <section id='home' className='min-h-full px-4 flex flex-col justify-center items-center text-center lg:mt-[300px] py-8'>
+      <section id='home' className='min-h-full px-4 flex flex-col justify-center items-center text-center mt-[250px] py-8'>
         <div className='flex items-center justify-center'>
           <Image height={'150px'} width={'150px'} className='rounded-full object-center flex  hover:animate-spin' src={memoji}/>
         </div> 
