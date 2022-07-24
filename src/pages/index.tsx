@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image'
 import React, { useState, useEffect } from 'react'
-import axios from "axios";
 
 import { BsTwitter } from 'react-icons/bs'
 import { BsDiscord } from 'react-icons/bs'
@@ -9,7 +8,7 @@ import { BiMailSend } from 'react-icons/bi'
 import { BsGithub } from 'react-icons/bs'
 import { FaPython } from 'react-icons/fa'
 import { FaReact } from 'react-icons/fa'
-import { FaAngleDoubleDown } from 'react-icons/fa'
+import { FaAngleDown } from 'react-icons/fa'
 
 import memoji  from '../../assets/images/meMoji.png'
 
@@ -17,11 +16,8 @@ export default function Home() {
 
   return (
     <div className="h-full overflow-auto">
-      <Head>
-        <title>borox</title>
-      </Head>
 
-      <section id='home' className='min-h-full px-4 flex flex-col justify-center items-center text-center mt-[250px] py-8'>
+      <section id='home' className='min-h-full px-4 flex flex-col justify-center items-center text-center mt-[150px] py-8'>
         <div className='flex items-center justify-center'>
           <Image height={'150px'} width={'150px'} className='rounded-full object-center flex  hover:animate-spin' src={memoji}/>
         </div> 
@@ -36,7 +32,7 @@ export default function Home() {
 
         <div className='flex items-center justify-center flex-grow mt-20 animate-bounce'>
           <a href='#contact'>
-            <FaAngleDoubleDown className='w-12 h-12 ' />
+            <FaAngleDown className='w-12 h-12 ' />
           </a>
         </div>
       </section>
